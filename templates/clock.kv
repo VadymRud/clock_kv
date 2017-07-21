@@ -1,7 +1,27 @@
-Label:
+<Label>:
     text: '[b]00:00[/b]:00'
     font_name: 'Roboto'
     font_size: 60
     markup: True
 
+BoxLayout:
+    orientation: 'vertical'
+    Label:
+        id: time
 
+    BoxLayout:
+        height: 90
+        orientation: 'horizontal'
+        padding: 20
+        spacing: 20
+        size_hint: (1, None)
+
+        Button:
+            id: start_stop
+            text: 'Start'
+            on_press: app.start_stop()
+
+        Button:
+            id: reset
+            text: 'Stop'
+            on_press: app.stop()

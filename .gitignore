@@ -1,10 +1,11 @@
 .buildozer
-buildozer.spec
+#buildozer.spec
 bin
 .idea
 *.iml
 .idea/*.xml
 .idea/*.iml
+clock.ini
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
